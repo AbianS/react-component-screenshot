@@ -1,0 +1,69 @@
+{
+  "name": "react-component-screenshot",
+  "version": "1.0.0",
+  "description": "Effortlessly capture and save high-quality screenshots of your React components with this lightweight tool.",
+  "type": "module",
+  "source": "src/index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "targets": {
+    "main": {
+      "optimize": true
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "watch": "parcel",
+    "build": "cross-env parcel build --no-source-maps"
+  },
+  "repository": "https://github.com/AbianS/react-component-screenshot",
+  "keywords": [
+    "react",
+    "component",
+    "screenshot",
+    "html2canvas",
+    "screenshot-react-component",
+    "react-screenshot",
+    "react-component-screenshot",
+    "react-screenshot-component"
+  ],
+  "author": "AbianS",
+  "license": "MIT",
+  "homepage": "https://github.com/AbianS/react-component-screenshot",
+  "devDependencies": {
+    "@parcel/packager-ts": "^2.12.0",
+    "@parcel/transformer-typescript-types": "^2.12.0",
+    "@size-limit/preset-app": "^11.1.4",
+    "@size-limit/preset-big-lib": "^11.1.4",
+    "@size-limit/preset-small-lib": "^11.1.4",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "cross-env": "^7.0.3",
+    "parcel": "^2.12.0",
+    "process": "^0.11.10",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "size-limit": "^11.1.4",
+    "typescript": "^5.4.5",
+    "html2canvas": "^1.4.1"
+  },
+  "peerDependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "html2canvas": "^1.4.1"
+  },
+  "size-limit": [
+    {
+      "path": "./dist/*",
+      "limit": "500 ms",
+      "webpack": false
+    }
+  ],
+  "browserslist": [
+    "> 0.2%",
+    "last 2 versions",
+    "not ie < 10"
+  ]
+}

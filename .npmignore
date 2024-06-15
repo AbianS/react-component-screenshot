@@ -1,0 +1,8 @@
+node_modules
+*.log
+src
+.prettierrc
+tsconfig.json
+package-lock.json
+.parcel-cache
+utils
